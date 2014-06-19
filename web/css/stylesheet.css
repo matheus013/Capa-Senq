@@ -1,0 +1,345 @@
+/* Cores do tema
+
+cor 		rgb			hex
+
+azul		47 45 118		2F2D76
+verde		102 182 69		66B645
+cinza		202 207 199		CACFC7
+
+*/
+
+/* Removendo espaçamentos e padronizando bordas */
+*{  
+    padding:0;
+    margin:0;
+    border-color: #66B645;
+    border-width: 5px;
+}
+
+/* oculta barra de rolagem */
+
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+/* Definindo fontes personalizadas */
+@font-face
+{
+    font-family: digital;
+    src: url(fonts/DS-DIGII.ttf);
+}
+
+@font-face
+{
+    font-family: kgempireofdirt;
+    src: url(fonts/KGEmpireofDirt.ttf);
+}
+
+@font-face
+{
+    font-family: contm;
+    src: url(fonts/contm.ttf);
+}
+
+/* Definição de animações da página */
+
+@-webkit-keyframes fade{
+    0% { opacity: 1;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+@keyframes fade{
+    0% { opacity: 1;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes animatedBackground {
+        from { background-position: 0 0; }
+        to { background-position: 1300px 0; }
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+        to { background-position: 1300px 0; }
+}
+
+/* Estilo da Página Home */
+#home{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/backgrand.jpg');
+    background-size: 100% 100%;
+    background-repeat: repeat-x;
+    -webkit-animation: animatedBackground 40s infinite linear;
+    animation: animatedBackground 40s infinite linear;
+}
+
+#home .logo {
+    top: 10%;
+    position: fixed;
+    left: 40%;
+    height: 55%;
+    width: 30%;
+}
+
+#home .facebook {
+    top: 5%;
+    position: fixed;
+    left: 2%;
+    height: 10%;
+    width: 5%;
+    opacity: 0.7;
+}
+#home .facebook:hover{
+	opacity: 1;
+}
+#home .mail {
+    top: 5%;
+    position: fixed;
+    left: 7%;
+    height: 10%;
+    width: 5%;
+    opacity: 0.7;
+}
+
+#home .mail:hover{
+	opacity: 1;
+}
+
+#home .title{
+    position: fixed;
+    width: 98%;
+    text-align: right;
+    height: auto;
+    top: 2%;
+    font-family: kgempireofdirt;
+    font-size: 150%;
+}
+
+#home .text{
+    position: fixed;
+    top: 68%;
+    font-family: kgempireofdirt;
+    width: 100%;
+    height: auto;
+    font-size: 230%;
+    text-align: center;
+    color: #000000;
+}
+#home .time{
+    position: fixed;
+    top: 81%;
+    font-family: kgempireofdirt;
+    width: 100%;
+    height: auto;
+    font-size: 280%;
+    text-align: center;
+    color: #000000;
+}
+#home .logo-icone{
+    top: 95%;
+    position: fixed;
+    left: 90%;
+    height: 4%;
+    width: 8%;
+    opacity: 0.9;
+}
+
+#home .logo-icone:hover{
+    opacity: 1;
+}
+#contador{
+    top: 74%;
+    font-family: digital;
+    position: absolute;
+    height: auto;
+    width: 100%;
+    opacity: 0.9;
+    font-size: 315%;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    -webkit-animation: fade 1s infinite;
+    animation: fade 1s infinite;
+}
+
+/* Estilo do Menu */
+#menu{
+    position: absolute;
+    height: 8%;
+    width: 100%;
+    background-color: #FFFFFF;
+    font-family: kgempireofdirt;
+    font-size: 120%;
+    opacity: 0.6;
+    z-index: 1;
+    border-bottom-style: solid;
+}
+
+/* Estilo da lista com os links no menu */
+#menu ul{
+    top: 30%;
+    left: 10%;
+    width: 80%;
+    position: relative;
+    text-align: center;
+}
+
+#menu li{
+    display: inline;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#menu a {
+    text-decoration: none;
+}
+
+#menu .nav{
+    color: #787878;
+}
+
+#menu .nav:hover {
+    color: #66B645;
+    cursor: pointer;
+}
+
+
+/* Estilo da logo no topo do site */
+
+.logo-senq{
+    position: fixed;
+    left: 5%;
+    height: 18%;
+    width: 9%;
+    z-index: 2;
+}
+
+/* Estilo do container que exibe o conteúdo */
+.content{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/backgrand.jpg');
+    background-size: 100% 100%;
+}
+
+#content-frame{
+    top: 20%;
+    left: 25%;
+    width: 50%;
+    height: 70%;
+    position: relative;
+    border-style: none;
+}
+/* Estilo dos containers de conteudo */
+
+.content-box{
+    color: #787878;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    opacity: 0.7;
+}
+
+.content-box #left-box{
+    position: absolute;
+    width: 40%;
+    height: 100%;
+}
+
+.content-box #right-box{
+    position: absolute;
+    left: 40%;
+    width: 60%;
+    height: 100%;
+}
+
+.content-box .title{
+    position: relative;
+    text-align: center;
+    font-family: kgempireofdirt;
+    font-size: 250%;
+    left: 15%;
+    width: 70%;
+}
+
+.content-box .text{
+    position: relative;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: auto;
+    font-family: contm;
+    font-size: 80%;
+    text-align: justify;
+    padding: 1%;
+}
+
+.content-box img{
+    position: relative;
+    top: 5%;
+    width: 100%;
+    height: 90%;
+}
+
+.content-box iframe{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-style: none;
+}
+/* Estilo do formulario de contato */
+
+.formulario{
+    font-family: contm;
+    position: relative;
+    height: auto;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    text-align: center;
+}
+
+.btn-contato-enviar, .btn-contato-reset{
+    min-width: 15%;
+    padding: 3%;
+    font-family: contm;
+    font-size: 100%;
+}
+
+.btn-contato-enviar:hover, .btn-contato-reset:hover{
+    background-color: #66B645;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.formulario textarea, .formulario input{
+    position: relative;
+    max-width: 90%;
+    border: none;
+}
+
+
+/** Adequação de estilo para resoluções menores **/
+
+/* Telas com até 320 px de largura */
+@media screen and (max-width: 320px){
+/* Estilo do menu*/
+#menu{
+    font-size: 50%;
+}
+
+/* Estilo do frame de conteudo */
+.content-box .text{
+    font-size: 40%;
+}
+
+}
+
+

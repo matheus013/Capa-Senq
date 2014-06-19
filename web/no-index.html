@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<script type="text/javascript" src="js/contador.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
+<title>XV -  SENQ</title>
+
+<body onload="atualizaContador()">
+	
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Free Web tutorials">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="Hege Refsnes">
+	</head>
+	       
+        <a href=""><img src="images/logoredonda.png" class="logo-senq"></img></a>
+                
+        <div id="menu">         
+                
+        <ul>
+		<li><a class="nav" onclick="changeContent('pages/about.html')">O EVENTO</a></li> 
+		<li><a class="nav" onclick="changeContent('banner2.png')">PROGRAMACAO</a></li>
+		<li><a class="nav" onclick="changeContent('area-do-congressista.html')">INSCRICOES</a></li>
+                <li><a class="nav" onclick="changeContent('pages/contato.html')">PARCEIROS</a></li>
+                <li><a class="nav" onclick="changeContent('pages/fale-conosco.html')">CONTATO</a></li>
+	</ul>
+	
+        </div>
+	
+        <div class="content">
+            <iframe src="pages/about.html" id="content-frame"></iframe>            
+        </div>
+
+</body></html>
